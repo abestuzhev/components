@@ -1,0 +1,30 @@
+
+/* --------------------------------
+
+buttons
+
+-------------------------------- */
+$btn-bg-color: #c6463d;
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  border-radius: 0.25em;
+  padding: 1em 2em;
+  font-weight: bold;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 0.8125rem;
+  color: lighten($btn-bg-color, 100%);
+  background-color: $btn-bg-color;
+  border: 1px solid $btn-bg-color;
+  @extend %transition;
+
+  &:hover {
+    background-color: lighten($btn-bg-color, 5%);
+  }
+
+  &:active {
+    transform: scale(.95);
+  }
+}
